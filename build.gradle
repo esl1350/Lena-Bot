@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'whatever1'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile "org.apache.poi:poi:3.17"
+    compile "org.apache.poi:poi-ooxml:3.17"
+    compile 'net.dv8tion:JDA:3.7.1_392'
+}
