@@ -78,7 +78,7 @@ public class Main extends ListenerAdapter{
     static int tapNum = 0;
     public static void main(String[] args) throws LoginException {
         JDABuilder builder = new JDABuilder(AccountType.BOT);
-        String token = "NDc3OTIzMzI4Mzg0ODI3NDAy.Dl4KQA.wU71Sy6lANEC5WeVeDy9EI-Qr98";
+        String token = "xxxxx";
         builder.setToken(token);
         builder.addEventListener(new Main());
         builder.buildAsync();
@@ -152,7 +152,6 @@ public class Main extends ListenerAdapter{
             eb.setColor(new Color(255, 255, 255));
             eb.setTitle("**Commands**:");
             eb.addField("!kc unit *unitName*", "Calls the rarity, passives, and skills of unitName." + System.lineSeparator() + "Example: `!kc unit mary`", false);
-            eb.addField("!kc tap", "Tap Lena?? I'm not sure :V", false);
             event.getChannel().sendMessage(eb.build()).queue();
 
         }
